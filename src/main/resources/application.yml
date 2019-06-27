@@ -29,6 +29,11 @@ spring:
         web-allow-others: true
   flyway:
     locations: "classpath:/db/migration"
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://zipkin.team-f.cloud.school.thoughtworks.cn
 
 springfox:
   documentation:
