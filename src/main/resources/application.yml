@@ -40,9 +40,10 @@ spring:
   cloud:
     stream:
       binders:
-        destination: inputOrder
-        group: default
-        content-type: application/json
+        inputOrder:
+          destination: order
+          group: default
+          content-type: application/json
 
 logging:
   level:
